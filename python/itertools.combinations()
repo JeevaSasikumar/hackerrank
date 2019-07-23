@@ -1,0 +1,9 @@
+from itertools import combinations
+s,n=map(str,input().split())
+s=''.join(sorted(s))
+x=1
+while(x<=int(n)):
+    d=list(combinations(s,x))
+    for i in d:
+        print(''.join(i))
+    x+=1
